@@ -5,7 +5,8 @@
     font-family: 'Courier New', Courier, monospace;
 }
 header{
-    background-color: #030637;
+    background:rgba(0,0,0,.3);
+    backdrop-filter: blur(100px);
     color: white;
     display: flex;
     align-items: center;
@@ -18,12 +19,11 @@ header{
     margin-left: 2.5rem;
     margin-top: 2rem;
 }
-header nav{
-    display: flex;
-}
+
 header ul {
     display: flex;
     align-items: center;
+    opacity: 1;
 }
 header ul li{
     color: white;

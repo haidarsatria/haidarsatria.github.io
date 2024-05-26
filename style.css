@@ -5,7 +5,7 @@
     font-family: 'Courier New', Courier, monospace;
 }
 header{
-    background-color: #333333;
+    background-color: #030637;
     color: white;
     display: flex;
     align-items: center;
@@ -13,6 +13,10 @@ header{
     padding-inline: 25px;
     height: 85px;
     font-weight: bolder;
+    width: 95%;
+    position: absolute;
+    margin-left: 2.5rem;
+    margin-top: 2rem;
 }
 header nav{
     display: flex;
@@ -39,10 +43,12 @@ header ul li a:hover{
 }
 
 .mainProfile{
-    background-image: linear-gradient(#333333,white);
+    background: rgb(58,16,77);
+    background: linear-gradient(157deg, rgba(58,16,77,1) 0%, rgba(0,0,0,1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 10rem;
 }
 
 .sub-text{
@@ -66,6 +72,7 @@ header ul li a:hover{
     font-weight: bolder;
     font-size: larger;
     padding-right: 10%;
+    color: white;
 }
 .sub-text a{
     text-decoration: none;
@@ -80,23 +87,35 @@ header ul li a:hover{
     color: #333333;
     background-color: white;
 }
+.myImage{
+    background: rgb(150,0,157);
+    background: radial-gradient(circle, rgba(150,0,157,1) 0%, rgba(0,0,0,1) 100%);
+    border-radius: 24px;
+    margin: 20px;
+    transform: rotate(10deg) ;
+}
 .myImage img{
     filter: grayscale(50%);
     height: 550px;
-    border-radius: 50%;
+    border-radius: 20px;
 }
 
 @media  screen and (max-width:560px) {
     header{
         flex-direction: column;
+        padding-bottom: 20px;
     }
     main .mainProfile{
         flex-direction: column-reverse;
-        padding-top: 55px;
+        padding-top: 190px;
         order: -1;
         text-align: center;
     }
+    .myImage{
+        transform: rotate(0deg);
+    }
     .mainProfile .sub-text{
         justify-content: center;
+        align-items: center;
     }
 }

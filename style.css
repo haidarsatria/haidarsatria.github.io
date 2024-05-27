@@ -35,7 +35,7 @@ header ul li a{
     padding: 15px 20px 15px 20px;
     border-radius: 12px;
     margin-inline: 10px;
-
+    transition: all 0.2s;
 }
 header ul li a:hover{
     background-color: white;
@@ -107,9 +107,9 @@ header ul li a:hover{
     box-shadow: inset 1px 1px 10px white;
     border-radius: 20px;
     position: absolute;
-    transform: rotate(10deg);
+    transform: rotate(15deg);
     right: 190px;
-    top: 180px;
+    top: 150px;
     z-index: 0;
     height: 550px;
     width: 350px;
@@ -124,31 +124,24 @@ header ul li a:hover{
     position: absolute;
     transform: rotate(-15deg);
     right: 190px;
-    top: 180px;
+    top: 150px;
     z-index: 0;
     height: 550px;
     width: 350px;
     transition: all 0.5s;
-}
-.third{
-    background: rgb(150,0,157);
-    background: radial-gradient(circle, rgba(150,0,157,1) 0%, rgba(0,0,0,1) 100%);
-    border: 0.1px solid black;
-    box-shadow: inset 1px 1px 10px white;
-    border-radius: 20px;
-    position: absolute;
-    right: 190px;
-    transform: rotate(20deg);
-    top: 180px;
-    z-index: 0;
-    height: 550px;
-    width: 350px;
-    transition: all 0.5s;
-}
-.imagegroup:hover section{
-    transform: rotate(0deg);
 }
 
+.imagegroup:hover .first{
+    transform: rotate(0deg);
+    top: 180px;
+}
+.imagegroup:hover .second{
+    transform: rotate(0deg);
+    top: 180px;
+}
+.about{
+    background-color: black;
+}
 @media  screen and (max-width:560px) {
     header{
         flex-direction: column;
@@ -160,11 +153,24 @@ header ul li a:hover{
         order: -1;
         text-align: center;
     }
-    .myImage{
+    .first,.second{
+        top: 180px;
+        left: 85px;
+    }
+    .imagegroup:hover .first{
         transform: rotate(0deg);
+        top: 210px;
+    }
+    .imagegroup:hover .second{
+        transform: rotate(0deg);
+        top: 210px;
+    }
+    .imagegroup{
+        padding-bottom: 75px;
     }
     .mainProfile .sub-text{
         justify-content: center;
         align-items: center;
     }
+    
 }

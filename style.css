@@ -267,6 +267,75 @@ header ul li a:hover{
     height: 200px;
     filter: invert(100%);
 }
+.container-education{
+    padding-top: 10%;
+    color: white;
+    text-align: center;
+    background: linear-gradient( rgb(74, 1, 78) , black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-block: 10% 20%;
+    font-weight: bolder;
+}
+.education{
+    display: flex;
+    gap: 100px;
+    margin-top: 10%;
+}
+.title {
+    border-bottom: 1px solid white;
+    width: fit-content;
+}
+.seniorHighSchool{
+    border: 0.5px solid white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    height: fit-content;
+    width: 30rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+}
+.seniorHighSchool img{
+    height: 200px;
+    margin-block: 50px;
+}
+.university{
+    border: 0.5px solid white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    height: fit-content;
+    width: 30rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+}
+.university img{
+    height: 200px;
+    margin-block: 50px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    height: 100px;
+    background-color: black;
+    font-size: large;
+}
+.social img{
+    height: 35px;
+    filter: invert(100%);
+}
+.social img:hover{
+    animation: bounce2 1s ease ;
+}
 @media  screen and (max-width:560px) {
     header{
         flex-direction: column;
@@ -322,5 +391,58 @@ header ul li a:hover{
     .graphic{
         margin-left: 0;
     }
-    
+    .education{
+        flex-direction: column;
+    }
+}
+
+@media screen  and (max-width:1286px){
+    .about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .aboutme{
+        padding-inline: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about h2::before{
+        content: "";
+    }
+    .about h2{
+        border-bottom: 1px solid white;
+        width: fit-content;
+    }
+    .first,.second{
+        right: 55px;
+    }
+    .UserInterface{
+        margin-left: 0;
+    }
+    .graphic{
+        margin-left: 0;
+    }
+    body{
+        overflow-x: hidden ;
+    }
+    .education{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:1280px){
+    .first,.second{
+        display: none;
+    }
+}
+
+@keyframes bounce2 {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
 }

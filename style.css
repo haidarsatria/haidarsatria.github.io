@@ -4,6 +4,7 @@
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
 }
+/*This is a header and navbar css*/
 header{
     background:rgba(0,0,0,.3);
     backdrop-filter: blur(100px);
@@ -42,6 +43,7 @@ header ul li a:hover{
     color: black;
 }
 
+/*This is a Profile css*/
 .mainProfile{
     background: rgb(58,16,77);
     background: linear-gradient(157deg, rgba(58,16,77,1) 0%, rgba(0,0,0,1) 100%);
@@ -140,6 +142,7 @@ header ul li a:hover{
     transform: rotate(0deg);
     top: 180px;
 }
+/*about me section css*/
 .about{
     background-color: black;
     display: flex;
@@ -180,6 +183,7 @@ header ul li a:hover{
     font-size: 20px;
     line-height: 40px;
 }
+/* Skill Section CSS*/
 .container-skill{
     padding-top: 10%;
     color: white;
@@ -267,6 +271,7 @@ header ul li a:hover{
     height: 200px;
     filter: invert(100%);
 }
+/* Education Section CSS*/
 .container-education{
     padding-top: 10%;
     color: white;
@@ -318,6 +323,7 @@ header ul li a:hover{
     height: 200px;
     margin-block: 50px;
 }
+/*Footer CSS*/
 footer{
     display: flex;
     flex-direction: column;
@@ -336,6 +342,7 @@ footer{
 .social img:hover{
     animation: bounce2 1s ease ;
 }
+/*Break Point for Mobile*/
 @media  screen and (max-width:560px) {
     header{
         flex-direction: column;
@@ -395,7 +402,7 @@ footer{
         flex-direction: column;
     }
 }
-
+/*Break Point for Desktop*/
 @media screen  and (max-width:1286px){
     .about{
         display: flex;
@@ -440,7 +447,7 @@ footer{
         display: none;
     }
 }
-
+/*Animation*/
 @keyframes bounce2 {
 	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
 	40% {transform: translateY(-30px);}

@@ -344,9 +344,14 @@ footer{
 }
 /*Break Point for Mobile*/
 @media  screen and (max-width:560px) {
+    body{
+        width: 100%;
+        min-width: 100%;
+    }
     header{
         flex-direction: column;
         padding-bottom: 20px;
+        right: 15px;
     }
     main .mainProfile{
         flex-direction: column-reverse;
@@ -404,6 +409,11 @@ footer{
 }
 /*Break Point for Desktop*/
 @media screen  and (max-width:1286px){
+    body{
+        width: 100%;
+        min-width: 100%;
+        overflow-x: hidden
+    }
     .about{
         display: flex;
         flex-direction: column;
@@ -434,18 +444,21 @@ footer{
     .graphic{
         margin-left: 0;
     }
-    body{
-        overflow-x: hidden ;
-    }
+
     .education{
         flex-direction: column;
     }
 }
 
-@media screen and (max-width:1280px){
+@media screen and (max-width:1285px){
     .first,.second{
         display: none;
     }
+    body{
+        width: 100%;
+        min-width: 100%;
+    }
+    
 }
 /*Animation*/
 @keyframes bounce2 {

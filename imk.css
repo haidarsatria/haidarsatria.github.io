@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+/*This is a header and navbar css*/
+header{
+    background:rgba(0,0,0,.3);
+    backdrop-filter: blur(100px);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 25px;
+    height: 85px;
+    font-weight: bolder;
+    width: 95%;
+    position: absolute;
+    margin-left: 2.5rem;
+    margin-top: 2rem;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    opacity: 1;
+}
+header ul li{
+    color: white;
+    list-style: none;
+}
+header ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px 15px 20px;
+    border-radius: 12px;
+    margin-inline: 10px;
+    transition: all 0.2s;
+}
+header ul li a:hover{
+    background-color: white;
+    color: black;
+}

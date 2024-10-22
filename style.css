@@ -4,6 +4,12 @@
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
 }
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
 /*This is a header and navbar css*/
 header{
     background:rgba(0,0,0,.3);
@@ -103,55 +109,26 @@ header ul li a:hover{
     height: 550px;
     border-radius: 20px;
 }
-.first{
-    background: rgb(150,0,157);
-    background: radial-gradient(circle, rgba(150,0,157,1) 0%, rgba(0,0,0,1) 100%);
-    border: 0.1px solid black;
-    box-shadow: inset 1px 1px 10px white;
-    border-radius: 20px;
-    position: absolute;
-    transform: rotate(15deg);
-    right: 180px;
-    top: 150px;
-    z-index: 0;
-    height: 550px;
-    width: 350px;
-    transition: all 0.5s;
-}
-.second{
-    background: rgb(150,0,157);
-    background: radial-gradient(circle, rgba(150,0,157,1) 0%, rgba(0,0,0,1) 100%);
-    border: 0.1px solid black;
-    box-shadow: inset 1px 1px 10px white;
-    border-radius: 20px;
-    position: absolute;
-    transform: rotate(-15deg);
-    right: 180px;
-    top: 150px;
-    z-index: 0;
-    height: 550px;
-    width: 350px;
-    transition: all 0.5s;
-}
 
 .imagegroup:hover .first{
-    transform: rotate(0deg);
+    transform: rotate(15deg);
     top: 180px;
 }
 .imagegroup:hover .second{
-    transform: rotate(0deg);
+    transform: rotate(-15deg);
     top: 180px;
 }
 /*about me section css*/
 .about{
     background-color: black;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: white;
     gap: 5vh;
 }
-.photo{
-    display: flex;
-}
+
 .bgimage{
     height: 450px;
     position: relative;
@@ -171,6 +148,9 @@ header ul li a:hover{
     flex-direction: column;
     padding: 10px 20px 0px 0px;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .about h2::before{
     content: "|";
@@ -287,7 +267,8 @@ header ul li a:hover{
 .education{
     display: flex;
     gap: 100px;
-    margin-top: 10%;
+    margin-top: 100px;
+    margin-inline: 100px;
 }
 .title {
     border-bottom: 1px solid white;
@@ -343,11 +324,8 @@ footer{
     animation: bounce2 1s ease ;
 }
 /*Break Point for Mobile*/
-@media  screen and (max-width:560px) {
-    body{
-        width: 100%;
-        min-width: 100%;
-    }
+@media  screen and (max-width:767px) {
+
     header{
         flex-direction: column;
         padding-bottom: 20px;
@@ -392,12 +370,12 @@ footer{
         text-align: center;
     }
     .bgimage{
-        height: 450px;
-        width: 450px;
+        height: 50%px;
+        width: 50%px;
         border-radius: 12px;
     }
     .mainimage{
-        height: 280px;
+        height: 50%px;
         margin: 75px 20px 0px 0px;
     }
     .UserInterface{
@@ -411,12 +389,8 @@ footer{
     }
 }
 /*Break Point for Desktop*/
-@media screen  and (max-width:1286px){
-    body{
-        width: 100%;
-        min-width: 100%;
-        overflow-x: hidden
-    }
+@media screen  and (min-width:1200px){
+
     .about{
         display: flex;
         flex-direction: column;
@@ -438,9 +412,7 @@ footer{
         border-bottom: 1px solid white;
         width: fit-content;
     }
-    .first,.second{
-        right: 55px;
-    }
+
     .UserInterface{
         margin-left: 0;
     }
@@ -448,20 +420,23 @@ footer{
         margin-left: 0;
     }
 
-    .education{
-        flex-direction: column;
-    }
+
+
 }
 
-@media screen and (max-width:1285px){
-    .first,.second{
-        display: none;
+@media screen and (min-with: 768px) and (max-width:1199px){
+    .about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
-    body{
-        width: 100%;
-        min-width: 100%;
+    .education{
+        display: flex;
+        flex-direction: column;
+        margin-inline: 200px;
     }
-    
 }
 /*Animation*/
 @keyframes bounce2 {
